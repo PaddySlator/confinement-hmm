@@ -6,8 +6,8 @@ Author: Paddy Slator (p.slator@ucl.ac.uk), Centre for Medical Image Computing, U
 
 Date: August 2018
 
-There are three folders: **TrajectoryData**, **TrajectoryProcessingCode** and **SimulationAndMCMCCode**.
-And two example scripts: **HPWMCMCSimInitFile.m** and **HPWMCMCDataInitFile.m**
+There are three folders: **TrajectoryData**, **TrajectoryProcessingCode** and **SimulationAndMCMCCode**;
+and two example scripts: **HPWMCMCSimInitFile.m** and **HPWMCMCDataInitFile.m**.
 
 # Example scripts
 
