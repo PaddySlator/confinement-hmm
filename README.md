@@ -10,10 +10,9 @@ And two example scripts: **HPWMCMCSimInitFile.m** and **HPWMCMCDataInitFile.m**
 
 # Example scripts
 
-* **HPWMCMC_OU_SimInitFile.m** runs SimulateHPW.m with the same parameters as simulation in paper (Figures 1-3),
-then runs HPWMCMC_OU.m on the simulated trajectory, and plots MCMC output.
+* **HPWMCMC_OU_SimInitFile.m** Simulates the harmonic potential well (HPW) model with the same parameters as the paper simulation (Figures 1-3), runs the HPW MCMC algorithm on the simulated trajectory, and plots MCMC output.
 
-* **HPWMCMC_OU_DataInitFile.m** runs HPWMCMC_OU.m on a single trajectory from the GM1 dataset, and plots MCMC output.
+* **HPWMCMC_OU_DataInitFile.m** runs HPW MCMC algorithm on a single trajectory from the GM1 dataset, and plots MCMC output.
 
 
 # TrajectoryData contains:
