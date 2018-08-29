@@ -1,7 +1,7 @@
 This repository contains data and analysis code relating to the Biophysical Journal submission: 
 A Hidden Markov Model for Detecting Confinement in Single Particle Tracking Trajectories, by Slator PJ and Burroughs NJ.
 
-Author: Paddy Slator (p.slator@ucl.ac.uk), Centre for Medical Image Computing, University College London
+Author: Paddy Slator (p.slator[at symbol]ucl.ac.uk), Centre for Medical Image Computing, University College London
 [Previously Warwick Systems Biology Centre]
 
 Date: August 2018
@@ -51,6 +51,6 @@ Spillane KM, Ortega-Arroyo J, de Wit G, Eggeling C, Ewers H, Wallace MI, Kukura 
 
 **The matlab code is released under the GNU General Public License v3.0, see LICENSE.txt.**
 
-**The data (the contents of the TrajectoryData directory) belongs to Philipp Kukura (philipp.kukura@chem.ox.ac.uk), and is included here with his permission.**
+**The data (the contents of the TrajectoryData directory) belongs to Philipp Kukura (philipp.kukura[at symbol]chem.ox.ac.uk), and is included here with his permission.**
 
 
