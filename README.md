@@ -3,6 +3,7 @@ A Hidden Markov Model for Detecting Confinement in Single Particle Tracking Traj
 
 Author: Paddy Slator (p.slator@ucl.ac.uk), Centre for Medical Image Computing, University College London
 [Previously Warwick Systems Biology Centre]
+
 Date: August 2018
 
 There are three folders: **TrajectoryData**, **TrajectoryProcessingCode** and **SimulationAndMCMCCode**.
