@@ -6,21 +6,21 @@ Author: Paddy Slator (p.slator@ucl.ac.uk), Centre for Medical Image Computing, U
 Date: August 2018
 
 There are three folders: **TrajectoryData**, **TrajectoryProcessingCode** and **SimulationAndMCMCCode**.
-And two example scripts: HPWMCMCSimInitFile.m and HPWMCMCDataInitFile.m
+And two example scripts: **HPWMCMCSimInitFile.m** and **HPWMCMCDataInitFile.m**
 
-HPWMCMC_OU_SimInitFile.m runs SimulateHPW.m with the same parameters as simulation in paper (Figures 1-3),
+**HPWMCMC_OU_SimInitFile.m** runs SimulateHPW.m with the same parameters as simulation in paper (Figures 1-3),
 then runs HPWMCMC_OU.m on the simulated trajectory, and plots MCMC output.
 
-HPWMCMC_OU_DataInitFile.m runs HPWMCMC_OU.m on a single trajectory from the GM1 dataset, and plots MCMC output.
+**HPWMCMC_OU_DataInitFile.m** runs HPWMCMC_OU.m on a single trajectory from the GM1 dataset, and plots MCMC output.
 
 
 # TrajectoryData contains:
 
-The raw GM1 trajectory files:
+* The raw GM1 trajectory files:
 20gold_SLBglass_0.03%GM1.mat (71 trajectories)
 40gold_SLBmica_0.03%GM1.mat (18 trajectories)
 
-The processed GM1 trajectory files (trajectories subsampled at rate 10, with additional processing of artefacts as described in S1 Text):
+* The processed GM1 trajectory files (trajectories subsampled at rate 10, with additional processing of artefacts as described in S1 Text):
 20gold_SLBglass_0.03%GM1Processed.mat (71 trajectories)
 40gold_SLBmica_0.03%GM1Processed.mat (18 trajectories)
 
@@ -31,16 +31,16 @@ Spillane KM, Ortega-Arroyo J, de Wit G, Eggeling C, Ewers H, Wallace MI, Kukura 
 
 # TrajectoryProcessingCode contains:
 
-ProcessGM1Trajectories.m - Function which takes raw trajectories from 20gold_SLBglass_0.03%GM1.mat file and processes as described in "additional preprocessing of trajectories" in S1 Text. This gives the trajectories included in the 20gold_SLBglass_0.03%GM1Processed.mat file as output.
+* ProcessGM1Trajectories.m - Function which takes raw trajectories from 20gold_SLBglass_0.03%GM1.mat file and processes as described in "additional preprocessing of trajectories" in S1 Text. This gives the trajectories included in the 20gold_SLBglass_0.03%GM1Processed.mat file as output.
 
-SubsampleTrajectory.m - function for subsampling trajectories.
+* SubsampleTrajectory.m - function for subsampling trajectories.
 
 
 
 # SimulationAndMCMCCode contains:
 
-SimulateHPW.m - function that simulates the HPW model (see Results and Algorithm 2 in Supporting Information).
+* SimulateHPW.m - function that simulates the HPW model (see Results and Algorithm 2 in Supporting Information).
 
-HPWMCMC_OU.m - function that runs the HPW MCMC algorithm on a trajectory (see Methods and Algorithm 1 in Supporting Information).
+* HPWMCMC_OU.m - function that runs the HPW MCMC algorithm on a trajectory (see Methods and Algorithm 1 in Supporting Information).
 
-subfunctions - a directory containing subfunctions for the MCMC algorithm
+* subfunctions - a directory containing subfunctions for the MCMC algorithm
