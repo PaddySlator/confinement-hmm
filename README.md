@@ -47,7 +47,7 @@ Spillane KM, Ortega-Arroyo J, de Wit G, Eggeling C, Ewers H, Wallace MI, Kukura 
 
 * SubsampleTrajectory.m - function for subsampling trajectories.
 
-
+# License and Data Ownership 
 
 **The matlab code is released under the GNU General Public License v3.0, see LICENSE.txt.**
 
