@@ -8,10 +8,12 @@ Date: August 2018
 There are three folders: **TrajectoryData**, **TrajectoryProcessingCode** and **SimulationAndMCMCCode**.
 And two example scripts: **HPWMCMCSimInitFile.m** and **HPWMCMCDataInitFile.m**
 
-**HPWMCMC_OU_SimInitFile.m** runs SimulateHPW.m with the same parameters as simulation in paper (Figures 1-3),
+# Example scripts
+
+* **HPWMCMC_OU_SimInitFile.m** runs SimulateHPW.m with the same parameters as simulation in paper (Figures 1-3),
 then runs HPWMCMC_OU.m on the simulated trajectory, and plots MCMC output.
 
-**HPWMCMC_OU_DataInitFile.m** runs HPWMCMC_OU.m on a single trajectory from the GM1 dataset, and plots MCMC output.
+* **HPWMCMC_OU_DataInitFile.m** runs HPWMCMC_OU.m on a single trajectory from the GM1 dataset, and plots MCMC output.
 
 
 # TrajectoryData contains:
