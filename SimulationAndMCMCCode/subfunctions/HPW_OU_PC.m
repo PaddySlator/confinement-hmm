@@ -10,7 +10,22 @@ function logPC = HPW_OU_PC(Traj,C,z,parameters,prior)
 % prior - structure containing all the priors 
 %
 % OUTPUT: logPC: log( p(C | all parameters, z))
-
+%
+%
+%
+% LICENSE
+% <confinement-hmm toolbox (MCMC algorithm for detecting confinement in single particle tracking data)>
+% Copyright (C) <2018>  <Paddy J. Slator, p.slator@ucl.ac.uk>
+%  
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+% 
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
 
 D=parameters(1);
 D_C=parameters(2);

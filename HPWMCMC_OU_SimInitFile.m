@@ -97,106 +97,27 @@ for i=1:n_chains
 end
 
 
-
-
-
-
 % plot the MCMC output
 plot_HPW_OU_MCMC_output(MCMCOutput)
 
-% %% plot the MCMC output
-% %parameter histograms and chains
-% Parameters=MCMCOutputSummary{1}.Parameters;
-% ParameterLabels={'D','D_C','\kappa','p_{esc}','p_{trap}'};
-% for i=1:length(Parameters)
-%     figure;
-%     subplot(1,2,1);hold on;
-%     for j=1:n_chains
-%         histogram(MCMCOutputSummary{j}.ParameterChains(alg_parameters.HPW.burn_in+1:end,i))
-%     end
-%     plot(SimulatedTraj.parameters(i),0,'o')
-%     xlabel(ParameterLabels{i})
-%     ylabel('Frequency')   
-%     legend_string=[];
-%     for j=1:n_chains
-%         legend_string{j} = ['MCMC samples: chain ' num2str(j)];
-%     end
-%     legend_string{end + 1} = 'simulated value';
-%     %legend('MCMC samples','simulated value')
-%     legend(legend_string)
-%     subplot(1,2,2);hold on;
-%     for j=1:n_chains
-%         plot(MCMCOutputSummary{j}.ParameterChains(:,i))
-%     end
-%     xlabel('MCMC step')
-%     ylabel(ParameterLabels{i})
-% end
+
+
+% LICENSE
+% <confinement-hmm toolbox (MCMC algorithm for detecting confinement in single particle tracking data)>
+% Copyright (C) <2018>  <Paddy J. Slator, p.slator@ucl.ac.uk>
+%  
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
 % 
-% %hidden states
-% %z
-% figure; hold on;
-% plot(SimulatedTraj.Y(1:end-1,3),SimulatedTraj.z,'k','LineWidth',2)
-% for j=1:n_chains
-%     plot(SimulatedTraj.Y(1:end-1,3),MCMCOutput{j}.z_mean,'--','LineWidth',1)
-% end
-% legend_string = {'simulated z'};
-% for j=1:n_chains
-%     legend_string{j+1} = ['mean inferred z: chain ' num2str(j)];
-% end
-% legend(legend_string)
-% xlabel('Time (s)')
-% ylabel('Confinement probability')
-% 
-% %C
-% figure;
-% subplot(1,2,1);hold on;
-% plot(SimulatedTraj.Y(1:end-1,3),SimulatedTraj.C(:,1));
-% for j=1:n_chains
-%     plot(SimulatedTraj.Y(1:end-1,3),MCMCOutput{j}.mean_Cx);
-% end
-% legend_string = {'simulated C_1'};
-% for j=1:n_chains
-%     legend_string{j+1} = ['mean inferred C_1: chain ' num2str(j)];
-% end
-% legend(legend_string)
-% xlabel('Time (s)')
-% ylabel('C_1')
-% 
-% subplot(1,2,2);hold on;
-% plot(SimulatedTraj.Y(1:end-1,3),SimulatedTraj.C(:,1));
-% for j=1:n_chains
-%     plot(SimulatedTraj.Y(1:end-1,3),MCMCOutput{j}.mean_Cx);
-% end
-% legend_string = {'simulated C_2'};
-% for j=1:n_chains
-%     legend_string{j+1} = ['mean inferred C_2: chain ' num2str(j)];
-% end
-% legend(legend_string)
-% xlabel('Time (s)')
-% ylabel('C_2')
-% 
-% 
-% %trajectory coloured by inferred z (confinement state)
-% for j=1:n_chains
-%     figure;hold on;axis off;
-%     X=SimulatedTraj.Y(1:end-1,1)';
-%     Y=SimulatedTraj.Y(1:end-1,2)';
-%     Z=zeros(size(X));
-%     col=MCMCOutput{j}.z_mean;
-%     caxis([0 1])
-%     surface([X;X],[Y;Y],[Z;Z],[col;col],'facecol','no','edgecol','interp','linew',.5);
-%     colorbar('Location','SouthOutside','Ticks',[0 1],'TickLabels',{'free','confined'})
-%     title(['chain ' num2str(j)]);
-% end
-% 
-% 
-% 
-% 
-% 
-% 
-% 
-% 
-% 
-% 
-% 
-% 
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+
+
+
+
+
+

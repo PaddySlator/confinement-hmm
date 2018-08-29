@@ -1,6 +1,45 @@
 function [C, LogCDensity]=HPWMCMC_OU_BlockedCMove(Traj,C,z,parameters,prior,options)
-%if options.sample is 0 then don't actually do the move - just work out the
-%Gibbs density
+
+% INPUT:
+% Traj - the trajectory structure
+% C - centre sequence
+% z - hidden state sequence
+% parameters - current parameter values
+% prior - structure containing all the priors 
+%
+% options.BlockToMove - optional - specify the block to move rather than
+% sampling it
+%
+% options.sample - flag, if = 0 then don't actually calculate Gibbs move - just work out the
+% Gibbs density (LogCDensity) - requires options.CForDensity
+%
+% options.CForDensity - give value of C for calculating the Gibbs density,
+% i.e. the probability of drawing options.CForDensity, given function
+% inputs C, z, parameters, etc.
+
+
+% OUTPUT:
+% C - Gibbs sample of C 
+% LogCDensity - The log density of the Gibbs distribution at C 
+% log ( p(C | z,parameters) )
+
+
+% LICENSE
+% <confinement-hmm toolbox (MCMC algorithm for detecting confinement in single particle tracking data)>
+% Copyright (C) <2018>  <Paddy J. Slator, p.slator@ucl.ac.uk>
+%  
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+% 
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+
+    
+    
 
 D=parameters(1);
 D_C=parameters(2);

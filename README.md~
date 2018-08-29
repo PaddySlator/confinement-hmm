@@ -6,6 +6,29 @@ Author: Paddy Slator (p.slator@ucl.ac.uk), Centre for Medical Image Computing, U
 
 Date: August 2018
 
+The code is released under the GNU General Public License v3.0, see LICENSE.txt.
+
+The data belongs to 
+
+
+<one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
 There are three folders: **TrajectoryData**, **SimulationAndMCMCCode** and **TrajectoryProcessingCode**;
 and two example scripts: **HPWMCMCSimInitFile.m** and **HPWMCMCDataInitFile.m**.
 
@@ -46,11 +69,5 @@ Spillane KM, Ortega-Arroyo J, de Wit G, Eggeling C, Ewers H, Wallace MI, Kukura 
 * ProcessGM1Trajectories.m - Function which takes raw trajectories from 20gold_SLBglass_0.03%GM1.mat file and processes as described in "additional preprocessing of trajectories" in S1 Text. This gives the trajectories included in the 20gold_SLBglass_0.03%GM1Processed.mat file as output.
 
 * SubsampleTrajectory.m - function for subsampling trajectories.
-
-
-
-**The matlab code is released under the GNU General Public License v3.0, see LICENSE.txt.**
-
-**The data (the contents of the TrajectoryData directory) belongs to Philipp Kukura (philipp.kukura@chem.ox.ac.uk), and is included here with his permission.**
 
 
