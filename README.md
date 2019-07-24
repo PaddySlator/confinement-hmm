@@ -1,5 +1,5 @@
-This repository contains data and analysis code relating to the Biophysical Journal submission: 
-A Hidden Markov Model for Detecting Confinement in Single Particle Tracking Trajectories, by Slator PJ and Burroughs NJ.
+This repository contains data and analysis code relating to the Biophysical Journal article: 
+A Hidden Markov Model for Detecting Confinement in Single Particle Tracking Trajectories (2018), by Slator PJ and Burroughs NJ. https://doi.org/10.1016/j.bpj.2018.09.005
 
 Author: Paddy Slator (p.slator[at symbol]ucl.ac.uk), Centre for Medical Image Computing, University College London
 [Previously Warwick Systems Biology Centre]
